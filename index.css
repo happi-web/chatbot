@@ -519,7 +519,7 @@ header #menu{
     color:#f39c12
 }
 df-messenger {
-   --df-messenger-bot-message: #0138ff;
+   --df-messenger-bot-message: #808080;
    --df-messenger-button-titlebar-color: #3ea503;
    --df-messenger-chat-background-color: #f7cf7a;
    --df-messenger-font-color: white;
