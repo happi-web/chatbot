@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Techlar Learning Center</title>
-    <link rel="shortcut icon" href="images/logo_ico.png" type="image/x-icon">
+    <title>Techlar Intelligence</title>
+    <link rel="shortcut icon" href="images/Techlar.png" type="image/x-icon">
 
     <!-- google fonts cdn link  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,6 +16,22 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href='index.css'>
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //To minimise the height of chatbox
+        $(document).ready(function() {
+            window.addEventListener('dfMessengerLoaded', function (event) {
+            $r1 = document.querySelector("df-messenger");
+            $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+            $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
+            var sheet = new CSSStyleSheet;
+            // manage box height from here
+            sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 400px }`);
+            $r2.shadowRoot.adoptedStyleSheets = [ sheet ];
+            });
+        });
+    </script>
 
 </head>
 <body>
@@ -26,14 +42,13 @@
 
     <div id="menu" class="fas fa-bars"></div>
 
-    <a href="#" class="logo"><img src="images/logo_tra.png" alt="" srcset="" height="30px" width="100px"></a>
+    <a href="index.html" class="logo"><img src="images/Techlar.png" alt="" srcset="" height="50px" width="50px">INTELLIGENCE</a>
 
     <nav class="navbar">
         <ul>
             <li><a class="active" href="index.html">home</a></li>
             <li><a href="#about">about</a></li>
-            <li><a href="#course">programs</a></li>
-            <li><a href="#teacher">teacher</a></li>
+            <li><a href="#products">products</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
@@ -74,10 +89,15 @@
 
 <!-- home section ends -->
 
-<div class="container mt-5">
-  <h1>Submission Confirmation</h1>
-  <p>Success! We will get back to you very, very soon.</p>
-</div>
+
+<section class="home" id="home">
+
+    <h1>Submission Comfirmation </h1>
+    <h3>We have received your Submission and our Team will get back to you as soon as possible</h3>
+
+    <div class="shape"></div>
+
+</section>
 
 <!-- footer section starts  -->
 
