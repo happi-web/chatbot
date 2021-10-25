@@ -1,5 +1,5 @@
 :root{
-    --gradient:linear-gradient(90deg, #f0ec8a, #f7ab09);
+    --gradient:linear-gradient(90deg, #ffffff, #ffffff);
 }
 
 *{
@@ -43,12 +43,12 @@ section{
 .btn{
     padding:.7rem 3rem;
     font-size: 2rem;
-    color:#000000;
-    background:var(--gradient);
+    color:#ffffff;
+    background:#0f4e03;
     border-radius: 5rem;
     margin-top: 1rem;
     cursor: pointer;
-    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    box-shadow: 0 .1rem .3rem rgba(161, 167, 252, 0.815);
     position: relative;
     overflow: hidden;
     z-index: 0;
@@ -115,7 +115,7 @@ header .navbar ul li a:hover{
 
 header #login{
     font-size: 3rem;
-    color:#fff;
+    color:rgb(5, 1, 250);
     cursor: pointer;
 }
 
@@ -132,7 +132,8 @@ header #menu{
 
 .logo{
     font-size:24px;
-    font-weight:800;
+    font-weight:bolder;
+    color: rgb(255, 165, 0);
     text-decoration: none;
 }
 .login-form{
@@ -153,7 +154,7 @@ header #menu{
 
 .login-form form{
     width:35rem;
-    background:#f9fafb;
+    background:#024c96;
     margin:0 2rem;
     padding:1rem 3rem;
     border-radius: .5rem;
@@ -225,7 +226,7 @@ header #menu{
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    background:url(images/home-bg.jpg) no-repeat;
+    background:url(images/social.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -233,9 +234,13 @@ header #menu{
     text-align: center;
 }
 
-.home h1{
+.home h1 {
     font-size: 6rem;
-    color:#0A6DB7;
+    color:#0f4e03;
+}
+.home h3{
+    font-size: 3rem;
+    color:#ac0078;
 }
 
 .home p{
@@ -244,7 +249,7 @@ header #menu{
     padding:1rem 0;
     width:70rem;
 }
-
+/* 
 .home .shape{
     position: absolute;
     bottom:-.2rem; left: 0;
@@ -254,9 +259,9 @@ header #menu{
     block-size: 100rem 15rem;
     filter: drop-shadow(0 -.1rem .1rem rgb(4, 250, 250));
     animation: animate 10s linear infinite;
-}
+} */
 
-@keyframes animate{
+/* @keyframes animate{
 
     0%{
         background-position-x: 0rem;
@@ -266,7 +271,7 @@ header #menu{
         background-position-x: 100rem;
     }
 
-}
+} */
 
 .about{
     display: flex;
@@ -313,7 +318,7 @@ header #menu{
 
 .course .box-container .box{
     width:35rem;
-    border:.1rem solid rgba(0,0,0,.3);
+    border:.1rem solid rgb(255, 255, 255);
     position: relative;
     margin:1.5rem;  
 }
@@ -385,7 +390,7 @@ header #menu{
 
 .teacher{
     text-align: center;
-    background:url(images/visual.jpg) no-repeat;
+    background:url(images/home.png) no-repeat;
     background-size: cover;
     background-position: bottom;
 }
@@ -461,7 +466,7 @@ header #menu{
 }
 
 .footer{
-    background:#333;
+    background:rgb(255, 255, 255);
 }
 
 .footer .box-container{
@@ -478,13 +483,13 @@ header #menu{
 
 .footer .box-container .box h3{
     font-size: 2.5rem;
-    color:#fff;
+    color:rgb(24, 8, 252);
     padding:1rem 0;
 }
 
 .footer .box-container .box p{
     font-size: 1.7rem;
-    color:#eee;
+    color:rgb(3, 28, 247);
     padding:.7rem 0;
 }
 
@@ -497,7 +502,7 @@ header #menu{
     font-size: 1.8rem;
     display: block;
     padding:.5rem 0;
-    color:#eee;
+    color:rgb(3, 28, 247);
     text-decoration: none;
 }
 
@@ -508,8 +513,8 @@ header #menu{
 .footer .credit{
     padding:2rem 1rem;
     font-size: 2rem;
-    color:#fff;
-    background:#111;
+    color:rgb(3, 28, 247);
+    background:rgb(255, 255, 255);
     text-align: center;
     font-weight: normal;
     padding-bottom: 9rem;
@@ -519,14 +524,14 @@ header #menu{
     color:#f39c12
 }
 df-messenger {
-   --df-messenger-bot-message: #808080;
-   --df-messenger-button-titlebar-color:#5ecff5;
-   --df-messenger-chat-background-color:#ADD8E6;
-   --df-messenger-font-color: white;
-   --df-messenger-height:60px;
-   --df-messenger-send-icon:#00008B;
-   --df-messenger-user-message: #479b3d;
-}
+    --df-messenger-bot-message: #0f4e03;
+    --df-messenger-button-titlebar-color:#9299ff;
+    --df-messenger-chat-background-color:#ffffff;
+    --df-messenger-font-color: #ffffff;
+    --df-messenger-height:60px;
+    --df-messenger-send-icon:#00008B;
+    --df-messenger-user-message: #f39c12;
+ }
 
 
 
