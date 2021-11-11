@@ -525,11 +525,11 @@ header #menu{
 df-messenger {
     --df-messenger-bot-message: #0f4e03;
     --df-messenger-button-titlebar-color:#9299ff;
-    --df-messenger-chat-background-color:#ffffff;
+    --df-messenger-chat-background-color:#ADD8E6;
     --df-messenger-font-color: #ffffff;
     --df-messenger-height:60px;
     --df-messenger-send-icon:#00008B;
-    --df-messenger-user-message: #f39c12;
+    --df-messenger-user-message: #d7837f;
  }
  #myVideo {
     opacity: 0.15; 
